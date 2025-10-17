@@ -1,6 +1,7 @@
 # Easy JSON Text Format
 
 A very simple text storage format for programmatic manipulation of text. 
+The point of this format is not so that it can be rendered as is, but as translation medium when going between different text formats.
 
 The JSON file is a map with the following structure:
 
@@ -13,8 +14,7 @@ The JSON file is a map with the following structure:
 ```
 
 
-The styles section contains a list of styles, which are maps of attributes such 
-as font size, font format (bold, italics), and color. 
+The styles section contains a list of styles, which are maps of attributes such as font size, font format (bold, italics), and color. 
 
 Styles can also reference
 other styles and inherit their properties.
@@ -30,7 +30,7 @@ e.g.:
 }
 ```
 
-The sections portion contains a sequence of sections. e.g.
+The sections portion contains a sequence of sections:
 
 ```json
 {
@@ -43,11 +43,7 @@ The sections portion contains a sequence of sections. e.g.
 }
 ```
 
-The text is stored as a JSON file containing a list of text elements. Each text
-element consists of a map containing the actual contents of the text, it's stylistic
-attributes, and organizational attributes such as the section that it belongs to.
-Text could also link to some other portion of text through a link attribute, pointing
-at the ID of another text object
+The text is stored as a JSON file containing a list of text elements. Each text element consists of a map containing the actual contents of the text, it's stylistic attributes, and organizational attributes such as the section that it belongs to. Text could also link to some other portion of text through a link attribute, pointing at the ID of another text object:
 
 ```json
 {
