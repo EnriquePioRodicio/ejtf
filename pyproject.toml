@@ -22,8 +22,7 @@ Homepage = "https://github.com/EnriquePioRodicio/ejtf"
 Repository = "https://github.com/EnriquePioRodicio/ejtf"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["src*"]
+where = ["src"]
 
 [tool.setuptools.package-data]
-src = ["py.typed"]
+ejtf = ["py.typed"]

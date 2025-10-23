@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/ejtf/__init__.py
+src/ejtf/document.py
+src/ejtf/py.typed
+src/ejtf/section.py
+src/ejtf/style.py
+src/ejtf/text.py
+src/ejtf.egg-info/PKG-INFO
+src/ejtf.egg-info/SOURCES.txt
+src/ejtf.egg-info/dependency_links.txt
+src/ejtf.egg-info/top_level.txt
